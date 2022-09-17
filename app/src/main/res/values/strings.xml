@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Settings</string>
+    <string name="lib">Library</string>
+    <string name="exp">Explore</string>
+    <string name="me">My art</string>
+
+    <string name="tab_text_1">Hot</string>
+    <string name="tab_text_2">New</string>
+    <string name="tab_text_3">Girl</string>
+    <string name="tab_text_4">Animals</string>
+    <string name="tab_text_5">Love</string>
+    <string name="tab_text_6">Flowers</string>
+    <string name="tab_text_7">Fantasy</string>
+    <string name="tab_text_8">Holidays</string>
+    <string name="tab_text_9">Scenery</string>
+
+    <string name="me_1">In Progress</string>
+    <string name="me_2">Finished</string>
+    <string name="me_3">Purchased</string>
+    <string name="me_4">Collect</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="vibration">Vibration</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>
