@@ -30,10 +30,12 @@ open class MainActivity : AppCompatActivity() {
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(binding.root)
 
+        //去掉activity标题栏
+        supportActionBar?.hide()
         val navView: BottomNavigationView = binding.navView
 
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
-        setSupportActionBar(binding.toolbar)
+
         val appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.lib, R.id.exp, R.id.me
@@ -44,5 +46,6 @@ open class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
     }
+
 
 }

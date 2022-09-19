@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".ui_bar.exp.ExpFragment">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_700"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="MissingConstraints" />
     <TextView
         android:id="@+id/text_exp"
         android:layout_width="match_parent"

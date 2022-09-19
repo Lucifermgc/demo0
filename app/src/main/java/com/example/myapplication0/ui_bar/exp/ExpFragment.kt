@@ -28,6 +28,8 @@ class ExpFragment : Fragment() {
         _binding = FragmentExpBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+        //toolbar
+         binding.toolbar.title = "Explore"
         val textView: TextView = binding.textExp
         dashboardViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it

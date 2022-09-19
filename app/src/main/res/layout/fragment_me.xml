@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui_bar.me.MeFragment"
+    android:background="@color/purple_200"
     android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
 
 
 
@@ -15,26 +17,103 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/ic_me_settings"
         android:gravity="center"
         android:scaleType="centerInside"
-        android:text="setting"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp" />
 
     <ImageView
-        android:id="@+id/draw1"
-        android:layout_width="match_parent"
+        android:id="@+id/person"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_me_person"
+        app:layout_constraintTop_toBottomOf="@+id/click"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="51dp" />
+
+
+
+    <TextView
+        android:id="@+id/person_name"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/draw9"
+        android:text="Bonnie"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/person"
+        app:layout_constraintTop_toBottomOf="@+id/click"
         tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/appBarLayout"
+        app:layout_constraintStart_toEndOf="@+id/person"
+        android:background="@color/black_100"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_me_gem1"
+            app:layout_constraintStart_toEndOf="@+id/person"
+            app:layout_constraintTop_toBottomOf="@+id/person_name"
+            android:layout_weight="1"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="3"
+            app:layout_constraintStart_toEndOf="@+id/person"
+            app:layout_constraintTop_toBottomOf="@+id/person_name"
+            android:layout_weight="1"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_me_gem2"
+            app:layout_constraintStart_toEndOf="@+id/person"
+            app:layout_constraintTop_toBottomOf="@+id/person_name"
+            android:layout_weight="1"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+
+            android:text="0"
+            app:layout_constraintStart_toEndOf="@+id/person"
+            app:layout_constraintTop_toBottomOf="@+id/person_name"
+            android:layout_weight="1"
+            tools:ignore="MissingConstraints" />
+
+
+    </LinearLayout>
+
+
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/Theme.MyApplication0"
-        app:layout_constraintTop_toBottomOf="@+id/draw1"
+        app:layout_constraintTop_toBottomOf="@+id/person"
+
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.tabs.TabLayout
@@ -42,6 +121,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/draw1"
+            android:background="@color/purple_100"
             app:tabMode="scrollable"
 
 
@@ -54,7 +134,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
-
+        android:background="@color/purple_100"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp">
 

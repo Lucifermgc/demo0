@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.view.size
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager.widget.ViewPager
@@ -24,7 +25,10 @@ class MeFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
-
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -42,6 +46,8 @@ class MeFragment : Fragment() {
         val tabs: TabLayout = binding.tabs
         tabs.setupWithViewPager(viewPager)
 
+        //toolbar
+       // binding.toolbar.title = "My Art"
         binding.click.setOnClickListener {
             val intent = Intent(context, SettingsActivity::class.java)
             Log.d("test_me_click","$context")
@@ -51,6 +57,12 @@ class MeFragment : Fragment() {
         return root
     }
 
+
+  /*  override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentMeBinding.inflate(layoutInflater)
+        binding.toolbar.menu.clear()
+        binding.toolbar.inflateMenu(binding.)
+    }*/
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

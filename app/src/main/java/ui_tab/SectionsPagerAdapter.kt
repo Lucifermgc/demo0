@@ -41,7 +41,7 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) :
         else if (position == 2){
             return FragmentsThree.newInstance(position+1)
         }
-        else{return return FragmentsOne.newInstance(position+1)}
+        else{return FragmentsOne.newInstance(position+1)}
 
     }
 
