@@ -8,6 +8,10 @@
         <entry key="..\:/Android/MyApplication0/app/src/main/res/drawable-anydpi/ic_me_person.xml" value="0.153" />
         <entry key="..\:/Android/MyApplication0/app/src/main/res/drawable-anydpi/ic_me_settings.xml" value="0.153" />
         <entry key="..\:/Android/MyApplication0/app/src/main/res/drawable-anydpi/ic_setting_back.xml" value="0.1945" />
+        <entry key="..\:/Android/MyApplication0/app/src/main/res/drawable-anydpi/ic_setting_flag.xml" value="0.3085" />
+        <entry key="..\:/Android/MyApplication0/app/src/main/res/drawable-anydpi/ic_setting_palette.xml" value="0.3085" />
+        <entry key="..\:/Android/MyApplication0/app/src/main/res/drawable-anydpi/ic_setting_star.xml" value="0.178" />
+        <entry key="..\:/Android/MyApplication0/app/src/main/res/drawable-anydpi/ic_setting_vibration.xml" value="0.3085" />
         <entry key="..\:/Android/MyApplication0/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.155" />
         <entry key="..\:/Android/MyApplication0/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.153" />
         <entry key="..\:/Android/MyApplication0/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.153" />
@@ -31,7 +35,7 @@
         <entry key="..\:/Android/MyApplication0/app/src/main/res/layout/mefra_one.xml" value="0.20085470085470086" />
         <entry key="..\:/Android/MyApplication0/app/src/main/res/layout/mefra_three.xml" value="0.21557971014492755" />
         <entry key="..\:/Android/MyApplication0/app/src/main/res/layout/mefra_two.xml" value="0.21557971014492755" />
-        <entry key="..\:/Android/MyApplication0/app/src/main/res/layout/settings_activity.xml" value="0.1" />
+        <entry key="..\:/Android/MyApplication0/app/src/main/res/layout/settings_activity.xml" value="0.33" />
         <entry key="..\:/Android/MyApplication0/app/src/main/res/layout/title_bar.xml" value="0.15833333333333333" />
         <entry key="..\:/Android/MyApplication0/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3625" />
         <entry key="..\:/Android/MyApplication0/app/src/main/res/xml/root_preferences.xml" value="0.25" />

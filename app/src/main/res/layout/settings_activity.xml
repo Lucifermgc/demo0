@@ -1,7 +1,8 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black_100"
     xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.appcompat.widget.Toolbar
@@ -11,10 +12,153 @@
         android:background="@color/purple_700"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-
         tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
-</FrameLayout>
+            <ImageView
+                android:id="@+id/view1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_setting_flag"
+                android:layout_marginLeft="10dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="150dp"
+                android:textSize="18sp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:text="Upgrade to" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear1">
+
+        <ImageView
+            android:id="@+id/view2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_setting_palette"
+            android:layout_marginLeft="10dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="150dp"
+            android:textSize="18sp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:text="Highlight Areas" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="150dp"
+            android:src="@drawable/draw1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/linear2">
+
+            <ImageView
+                android:id="@+id/view3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_setting_vibration"
+                android:layout_marginLeft="10dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="150dp"
+                android:textSize="18sp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:text="Vibration" />
+
+        <Switch
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="60dp"
+            android:layout_marginLeft="120dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linear3">
+
+        <ImageView
+            android:id="@+id/view4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_setting_star"
+            android:layout_marginLeft="10dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="150dp"
+            android:textSize="18sp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:text="Rate Us" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="click 'Rate Us'!"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginLeft="80dp"/>
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout >
 
 
 

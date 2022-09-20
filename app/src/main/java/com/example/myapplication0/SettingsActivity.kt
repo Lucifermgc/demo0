@@ -4,12 +4,14 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceFragmentCompat
 import com.example.myapplication0.databinding.SettingsActivityBinding
 import com.example.myapplication0.ui_bar.me.MeFragment
 
-class SettingsActivity : AppCompatActivity() {
+class SettingsActivity : AppCompatActivity()/*,View.OnClickListener*/ {
 
     @SuppressLint("ResourceAsColor")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,16 +38,42 @@ class SettingsActivity : AppCompatActivity() {
         }
 
 
-     /*   binding.settings.setOnClickListener{
+        binding.text4.setOnClickListener{
             Log.d("test00","1")
-            val intent = Intent(this,MeFragment::class.java)
-            startActivity(intent)
-        }*/
+            AlertDialog.Builder(this).apply {
+                setTitle("Rate It 5-Star")
+                setMessage("Something import.")
+                setCancelable(false)
+                setPositiveButton("5-STAR"){ _, _ ->
+                }
+                setNegativeButton("Later"){ _, _ ->
+                }
+                show()
+            }
+        }
     }
 
   /*  class SettingsFragment : PreferenceFragmentCompat() {
         override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
             setPreferencesFromResource(R.xml.root_preferences, rootKey)
+        }
+    }*/
+
+/*    override fun onClick(v: View?) {
+        when(v?.id){
+            R.id.text4->{
+                Log.d("testRateus","okk")
+                AlertDialog.Builder(this).apply {
+                    setTitle("Rate It 5-Star")
+                    setMessage("Something import.")
+                    setCancelable(false)
+                    setPositiveButton("5-STAR"){ _, _ ->
+                    }
+                    setNegativeButton("Later"){ _, _ ->
+                    }
+                    show()
+                }
+        }
         }
     }*/
 }
