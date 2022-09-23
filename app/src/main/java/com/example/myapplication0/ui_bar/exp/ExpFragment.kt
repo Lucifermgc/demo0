@@ -22,6 +22,8 @@ class ExpFragment : Fragment() {
     private val doPicture = ArrayList<Do>()
     private val doPicture2 = ArrayList<Do>()
     private val doPicture3 = ArrayList<Do>()
+    private val doPicture4 = ArrayList<Do>()
+    private val doPicture5 = ArrayList<Do>()
     private val makeList = ArrayList<Make>()
 
    // private val data = listOf(R.string.exp_1,R.string.exp_2,R.string.exp_3)
@@ -60,23 +62,6 @@ class ExpFragment : Fragment() {
         binding.recyclerView.adapter = adapter
 
 
-
-     /*   for (text in data){
-            when (text) {
-                R.string.exp_1 -> {
-                    initMakes1()
-                    val layoutManager = LinearLayoutManager(view?.context)
-                    binding.recyclerView.layoutManager = layoutManager
-                    val adapter = RecycleAdapter(makeList)
-                    binding.recyclerView.adapter = adapter
-
-                    initDoes1()
-                    val layoutManager2 = LinearLayoutManager(view?.context)
-                    layoutManager2.orientation = LinearLayoutManager.HORIZONTAL
-                    binding2.recyclerView2.layoutManager = layoutManager2
-                    val adapter2 = RecycleAdapter2(doPicture)
-                    binding2.recyclerView2.adapter = adapter2
-                }*/
         return root
 
     }
@@ -89,9 +74,12 @@ class ExpFragment : Fragment() {
 
     private fun initMakes1(){
         initPicture()
-        makeList.add(Make("Disney",doPicture))
-        makeList.add(Make("Oil Painting",doPicture2))
-        makeList.add(Make("Famous Oil Painting",doPicture3))
+        makeList.add(Make("Disney",doPicture,"test1",R.drawable.draw1))
+        makeList.add(Make("Disney",doPicture,"test1",R.drawable.draw1))
+        makeList.add(Make("Oil Painting",doPicture2,"test2",R.drawable.draw2))
+        makeList.add(Make("Famous Oil Painting",doPicture3,"test3",R.drawable.draw3))
+        makeList.add(Make("Famous2",doPicture4,"test4",R.drawable.draw4))
+        makeList.add(Make("Famous3",doPicture5,"test5",R.drawable.draw5))
     }
 
     private fun initPicture(){
@@ -109,6 +97,16 @@ class ExpFragment : Fragment() {
         doPicture3.add(Do(R.drawable.draw5))
         doPicture3.add(Do(R.drawable.draw6))
         doPicture3.add(Do(R.drawable.draw7))
+
+        doPicture4.add(Do(R.drawable.draw5))
+        doPicture4.add(Do(R.drawable.draw6))
+        doPicture4.add(Do(R.drawable.draw7))
+        doPicture4.add(Do(R.drawable.draw8))
+
+        doPicture5.add(Do(R.drawable.draw6))
+        doPicture5.add(Do(R.drawable.draw7))
+        doPicture5.add(Do(R.drawable.draw8))
+        doPicture5.add(Do(R.drawable.draw9))
     }
 
 
