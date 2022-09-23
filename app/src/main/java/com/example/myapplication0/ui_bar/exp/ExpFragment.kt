@@ -74,12 +74,12 @@ class ExpFragment : Fragment() {
 
     private fun initMakes1(){
         initPicture()
-        makeList.add(Make("Disney",doPicture,"test1",R.drawable.draw1))
-        makeList.add(Make("Disney",doPicture,"test1",R.drawable.draw1))
-        makeList.add(Make("Oil Painting",doPicture2,"test2",R.drawable.draw2))
-        makeList.add(Make("Famous Oil Painting",doPicture3,"test3",R.drawable.draw3))
-        makeList.add(Make("Famous2",doPicture4,"test4",R.drawable.draw4))
-        makeList.add(Make("Famous3",doPicture5,"test5",R.drawable.draw5))
+        makeList.add(Make(null,null,"test1",R.drawable.draw1))
+        makeList.add(Make("Disney",doPicture,null,null))
+        makeList.add(Make("Oil Painting",doPicture2,null,null))
+        makeList.add(Make("Famous Oil Painting",doPicture3,null,null))
+        makeList.add(Make("Famous2",doPicture4,null,null))
+        makeList.add(Make("Famous3",doPicture5,null,null))
     }
 
     private fun initPicture(){

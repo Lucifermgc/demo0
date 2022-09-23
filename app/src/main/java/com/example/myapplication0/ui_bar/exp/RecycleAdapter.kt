@@ -64,14 +64,14 @@ class RecycleAdapter(private val makeList: List<Make>) : RecyclerView.Adapter<Re
                 val layoutManager2 = LinearLayoutManager(holder.itemView.context)
                 holder.recycleIt.layoutManager = layoutManager2
                 layoutManager2.orientation = LinearLayoutManager.HORIZONTAL
-                val adapter2 = RecycleAdapter2(makeDs.doPicture)
+                val adapter2 = makeDs.doPicture?.let { RecycleAdapter2(it) }
                 holder.recycleIt.adapter = adapter2
                 Log.d("okk3","666")
             }
             is SecondHolder ->{
 
                 holder.textIt.text =  makeDs.name2
-                holder.ImageIt.setImageResource(makeDs.pictureId)
+                makeDs.pictureId?.let { holder.ImageIt.setImageResource(it) }
             }
         }
 
@@ -91,7 +91,7 @@ class RecycleAdapter(private val makeList: List<Make>) : RecyclerView.Adapter<Re
 
 
 }
-class Make (val name:String ,val doPicture: List<Do>,val name2: String,val pictureId: Int){
+class Make (val name:String? ,val doPicture: List<Do>?,val name2: String?,val pictureId: Int?){
 
 }
 
